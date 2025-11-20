@@ -56,4 +56,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Comment::class);
     }
+
+    // Relación: un usuario tiene muchas notas (NUEVO - para Lab 13)
+    public function notas()
+    {
+        return $this->hasMany(Nota::class);
+    }
 }

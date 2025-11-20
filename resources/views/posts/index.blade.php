@@ -4,6 +4,7 @@
     <div class="container">
         <h1>Publicaciones</h1>
         <a href="{{ route('posts.create') }}" class="btn btn-primary mb-3">Crear Publicación</a>
+        <a href="{{ route('notas.index') }}" class="btn btn-success mb-3">Ver Notas</a>
 
         @if (session('success'))
             <div class="alert alert-success">{{ session('success') }}</div>
